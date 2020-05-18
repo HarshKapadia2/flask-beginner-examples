@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -11,7 +11,6 @@ def home_page():
 
 @app.route('/dashboard', methods=['POST'])
 def dashboard():
-    if request.method == 'POST':
         f_name = request.form['f-name']
         l_name = request.form['l-name']
         age = request.form['age']
