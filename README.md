@@ -1,5 +1,7 @@
 # flask-beginner-examples
 
+- Some beginner examples for Flask, a Python web development framework.
+
 ## **Technologies Used**
 
 - Back end
