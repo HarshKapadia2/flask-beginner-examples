@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eg_5 home page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+
+    <form action="/cart_bill" method="POST">
+        <input type="checkbox" name="is-checked" value="0">
+        <label for="is-checked">Tomatoes Rs. 50/kg </label>
+        <br>
+
+        <label for="qty">Quantity (in kgs): </label>
+        <input type="number" name="tomato-qty" value="0">
+        <br>
+        <br>
+        
+        <input type="checkbox" name="is-checked" value="1">
+        <label for="is-checked">Coriander Rs. 10/bunch </label>
+        <br>
+
+        <label for="qty">Quantity (in bunches): </label>
+        <input type="number" name="coriander-qty" value="0">
+        <br>
+        <br>
+
+        <input type="checkbox" name="is-checked" value="2">
+        <label for="is-checked">Potatoes Rs. 20/kg </label>
+        <br>
+
+        <label for="qty">Quantity (in kgs): </label>
+        <input type="number" name="potato-qty" value="0">
+        <br>
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

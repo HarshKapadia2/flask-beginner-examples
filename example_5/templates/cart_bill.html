@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eg_5 cart-bill</title>
+</head>
+<body>
+    <h1>Cart Bill</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Price/unit</th>
+                <th class="text-center">Qty</th>
+                <th class="text-center">Final price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+          {% for item in final_menu: %}
+            {% if item in isChecked and final_menu[item][2] != 0 %}
+                <tr>
+                    <td class="td-name">
+                        {{ final_menu[item][1] }}
+                    </td>
+                    <td class="td-number text-center">
+                        {{ final_menu[item][0] }}
+                    </td>
+                    <td class="td-number text-center">
+                        {{ final_menu[item][2] }}
+                    </td>
+                    <td class="td-number text-center">
+                        {{ final_menu[item][3] }}
+                    </td>
+                </tr>
+            {% endif %}
+          {% endfor %}
+        </tbody>
+    </table>
+
+    <h3>total = Rs.{{ total }}</h3>
+
+    <form action="/" method="GET">
+        <button type="submit">Home Page</button>
+    </form>
+</body>
+</html>
