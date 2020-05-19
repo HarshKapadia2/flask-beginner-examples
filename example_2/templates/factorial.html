@@ -6,7 +6,11 @@
     <title>eg_2 factorial</title>
 </head>
 <body>
-    <h1>Factorial = {{ fact }}</h1>
+    <h1>Factorial =</h1>
+
+    {% for num in fact_list: %}
+        <h2>{{ num }}</h2>
+    {% endfor %}
     
     <form action="/home" method="GET">
         <button type="submit">Home Page</button>

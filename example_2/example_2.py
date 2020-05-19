@@ -12,13 +12,22 @@ def home_page():
 
 @app.route('/home/<int:num>', methods=['GET'])
 def factorial(num):
-    fact = 1
+    fact_list = []
+    while num > 0:
+        fact = 1
+        temp = num
+        while temp > 0:
+            fact = fact*temp
+            temp -= 1
 
-    while(num > 1):
-        fact = fact*num
+        fact_list.append(fact)
         num -= 1
+    
+    fact_list.reverse()
+    fact_list.insert(0, 1)
 
-    return render_template('factorial.html', fact = fact)
+
+    return render_template('factorial.html', fact_list = fact_list)
 
 
 
