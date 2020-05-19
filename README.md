@@ -9,7 +9,6 @@
 
 - Front end
     - HTML
-    - CSS
 
 ## **Contributions**
 
