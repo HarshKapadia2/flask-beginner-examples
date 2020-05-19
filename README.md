@@ -24,3 +24,5 @@
 ## Flask beginner examples
 
 ![Flask examples in this repo.](flask-exercise.jpg)
+
+6. <Contributors, add your example gist (summary) here>
