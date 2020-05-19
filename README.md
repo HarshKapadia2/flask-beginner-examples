@@ -1,6 +1,7 @@
 # flask-beginner-examples
 
 - Some beginner examples for Flask, a Python web development framework.
+- Some resources to learn Flask can be found [here](https://gist.github.com/HarshKapadia2/e7e13676c83bc295ce78aa7f39611caf).
 
 ## **Technologies Used**
 
